@@ -69,11 +69,25 @@ string[0] 这样访问单个字符
 # print(len(string))
 list("I love fish")
 tuple("i love fish") 转成元组
+global 声明全局变量
+nonlocal 声明闭包中引用函数外部变量
+lambda  匿名函数
+lambda x : 2 * x +1
 '''
 
 def MyFisrtFunction():
     print("这是我的第一个函数")
 MyFisrtFunction()
+
+
+def make_repeat(n):
+    return lambda s: s * n
+
+
+double = make_repeat(2)
+print(double(8))
+print(double('FishC'))
+
 
 
 
