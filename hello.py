@@ -73,6 +73,7 @@ global 声明全局变量
 nonlocal 声明闭包中引用函数外部变量
 lambda  匿名函数
 lambda x : 2 * x +1
+import pickle
 '''
 
 def MyFisrtFunction():
